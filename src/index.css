@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h5 {
+  text-align: center;
+  margin: 6px;
+}
+
+.table {
+  margin-top: 4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-cursor-pointer {
+  cursor: none;
+}
