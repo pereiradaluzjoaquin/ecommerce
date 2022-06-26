@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    const dispatch = useDispatch();
     const totalProductsInCart = useSelector((state) => state.product.totalProductsInCart);
 
     return (
@@ -26,9 +25,9 @@ const NavBar = () => {
                         <li class="nav-item">
                             <Link class="nav-link bi bi-cart" to="/Cart">{totalProductsInCart}</Link>
                         </li>
-                    </ul>                    
+                    </ul>
                 </div>
-            </div>  
+            </div>
         </nav>
     );
 };
